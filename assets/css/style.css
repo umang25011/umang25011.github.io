@@ -549,6 +549,10 @@ header ul li a.active {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.software-skill-inline img {
+  height: 1em;
+}
+
 
 /* .software-skill-inline i{
     color:#868e96
@@ -728,10 +732,12 @@ header ul li a.active {
 .experience-div-company {
   position: absolute;
   background: transparent;
-  height: 9rem;
-  top: 0;
-  left: 0;
-  width: 100%;
+  height: auto;
+  top: 50%;
+  padding: 1em;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -739,7 +745,14 @@ header ul li a.active {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.experience-div-company.hailify {
+  
+  width: 60% !important;
+  background: white;
+}
+.experience-div-company.coreway {
 
+}
 .experience-text-company {
   padding: 1.5rem;
   margin: 0;
