@@ -60,11 +60,11 @@
           <div class="column">
             <h2 data-aos="fade-down" data-aos-duration="1000">Hello, I'm Umang<span class="wave">👋</span></h2>
             <p data-aos="fade-right" data-aos-duration="1000">
-              I have experience working as a Front End Developer for over 1 year creating 4 ReactJS apps from scratch.
-              My skills range from Web Development, Backend, and Database to Machine Learning and AI. <br />
+              I have professional Full Stack Experience for over 4 years in React and .Net Core. My skills range from
+              Web Development, Backend, and Database to Machine Learning and AI. <br />
               I'm a quick learner, energetic and enthusiastic. Combined with my passion and problem-solving skills, I
-              can be a candidate for any team. <br /><strong>
-                I might not be the best candidate to hire, but I'll be the worst employee to replace.</strong
+              can be a best candidate for any team. <br /><strong>
+                I might not be the first candidate to hire, but I'll be the last employee to fire.</strong
               >
             </p>
             <a href="mailto:patel2m5@uwindsor.ca" data-aos="fade-right" data-aos-duration="1000">Contact Me</a>
@@ -105,7 +105,7 @@
             <div>
               <p style="color: #444444; font-size: 20px">
                 <span>⚡</span>
-                Experience of more than 1 year in developing stunning and swift websites using Reactjs, TypeScript,
+                Experience of more than 4 years in developing stunning and swift websites using Reactjs, TypeScript,
                 HTML, CSS
               </p>
               <div class="dev-icons">
@@ -153,6 +153,10 @@
               </p>
               <div class="dev-icons">
                 <ul>
+                  <li class="software-skill-inline">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+                    <p>.Net Core</p>
+                  </li>
                   <li class="software-skill-inline">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                     <p>Node.js</p>
@@ -266,8 +270,7 @@
               <br />
               <p style="color: #444444; font-size: 20px">
                 <span>⚡</span>
-                Expertise in developing high-performance mobile apps for both Android and cross platforms using
-                technologies such as React Native, Flutter, and Kotlin/Java
+                Utilizing key software development and project management tools
               </p>
               <div class="dev-icons">
                 <ul>
@@ -304,20 +307,25 @@
           <span class="low-highlight-skin">Experience</span>
         </h2>
 
-        <div class="experience-cards-div" title="Dont have much experience because i am a beginner :)">
+        <div class="experience-cards-div">
           <div class="experience-card" data-aos="fade-right" data-aos-duration="1500">
-            <div class="experience-banner">
-              <img class="experience-div-company hailify" height="0.5em" src="./assets/hailify.png" alt="Hailify" />
-            </div>
-            <div class="experience-text-details">
-              <h5 class="experience-text-role">Front End Engineer</h5>
-              <h5 class="experience-text-date">
-                <a href="https://www.drivehailify.com/" alt="https://www.drivehailify.com/">Hailify Inc </a>, New York,
-                USA (Remote)
-              </h5>
-              <p class="subTitle experience-text-desc">
-                Developed 4 web apps from scratch in ReactJS, TypeScript, HTML, CSS, Mapbox and Cypress.io
-              </p>
+            <div class="card-inner" onclick="toggleCardFlip(this)">
+              <div class="card-front">
+                <div class="experience-banner">
+                  <img class="experience-div-company hailify" height="0.5em" src="./assets/hailify.png" alt="Hailify" />
+                </div>
+                <div class="experience-text-details">
+                  <h5 class="experience-text-role">Front End Engineer</h5>
+                  <h5 class="experience-text-date">
+                    <a href="https://www.drivehailify.com/" alt="https://www.drivehailify.com/">Hailify Inc </a>, New
+                    York, USA (Remote)
+                  </h5>
+                  <p class="subTitle experience-text-desc">
+                    Developed 4 web apps from scratch in ReactJS, TypeScript, HTML, CSS, Mapbox and Cypress.io
+                  </p>
+                </div>
+              </div>
+              <div class="card-back">Test</div>
             </div>
           </div>
           <div class="experience-card" data-aos="fade-right" data-aos-duration="1500">
@@ -1962,6 +1970,10 @@
           })
         })
       })
+
+      function toggleCardFlip(card) {
+        card.classList.toggle("card-flipped")
+      }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
