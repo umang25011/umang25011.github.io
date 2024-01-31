@@ -694,7 +694,7 @@ header ul li a.active {
 
 .experience-card .card-front,
 .experience-card .card-back {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -735,7 +735,7 @@ header ul li a.active {
   -o-filter: blur(0);
   -ms-filter: blur(0);
   filter: blur(0);
-  height: 11rem;
+  height: 10rem;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-end;
@@ -776,12 +776,29 @@ header ul li a.active {
   justify-content: center;
 }
 .experience-div-company.hailify {
-  width: 60% !important;
+  width: 90% !important;
   background: white;
 }
+.experience-banner:has(.hailify) {
+  background: linear-gradient(rgba(1, 39, 85, 0.7), rgba(188, 240, 237, 0.5));
+}
+.experience-banner:has(.central) {
+  background: linear-gradient(rgba(195, 201, 11, 0.7), rgba(234, 238, 176, 0.5));
+}
+.experience-div-company.utilismart {
+  width: 100% !important;
+}
+.experience-banner:has(.utilismart) {
+  background: linear-gradient(rgba(73, 8, 103, 0.7), rgba(225, 188, 239, 0.5));
+}
+.experience-div-company.central {
+  width: 100% !important;
+}
 .experience-div-company.coreway {
-  height: 100%;
-  width: auto;
+  width: 100%;
+}
+.experience-banner:has(.coreway) {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.5));
 }
 .experience-text-company {
   padding: 1.5rem;
@@ -810,8 +827,7 @@ header ul li a.active {
 }
 
 .experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .experience-text-role {
@@ -820,7 +836,7 @@ header ul li a.active {
   font-weight: 400;
   font-size: 25px;
   margin: 0;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   line-height: normal;
 }
 
@@ -838,7 +854,7 @@ header ul li a.active {
 }
 
 .experience-text-desc {
-  text-align: center;
+  text-align: justify;
 }
 
 .logo-svg {
